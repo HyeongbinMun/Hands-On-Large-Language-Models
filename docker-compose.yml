@@ -1,0 +1,42 @@
+version: '2.3'
+  
+services:
+  main:
+    container_name: llm-test
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    runtime: nvidia
+    restart: always
+    env_file:
+      - "docker-compose-env/main.env"
+    volumes:
+      - type: volume
+        source: nfs_shared
+        target: /nfs_shared
+        volume:
+          nocopy: true
+      - "/media/mmlab/hdd:/hdd"
+    expose:
+      - "8000"
+    ports:
+      - "50022:22"
+      - "56006:6006"
+      - "58000:8000"
+      - "58888:8888"
+    ipc: host
+    stdin_open: true
+    tty: true
+
+volumes:
+  dataset:
+    driver: local
+    driver_opts:
+      type: none
+      device: /media/mmlab/hdd
+      o: bind
+  nfs_shared:
+    driver_opts:
+      type: "nfs"
+      o: "addr=mldisk2.sogang.ac.kr,nolock,soft,rw"
+      device: ":/volume1/nfs_shared"
