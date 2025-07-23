@@ -23,6 +23,11 @@ The book is available on:
 * [Barnes and Noble](https://www.barnesandnoble.com/w/hands-on-large-language-models-jay-alammar/1145185960)
 * [Goodreads](https://www.goodreads.com/book/show/210408850-hands-on-large-language-models)
 
+## Installations
+"""
+git clone 
+"""
+
 ## Table of Contents
 
 We advise to run all examples through Google Colab for the easiest setup. Google Colab allows you to use a T4 GPU with 16GB of VRAM for free. All examples were mainly built and tested using Google Colab, so it should be the most stable platform. However, any other cloud provider should work. 
