@@ -24,9 +24,10 @@ The book is available on:
 * [Goodreads](https://www.goodreads.com/book/show/210408850-hands-on-large-language-models)
 
 ## Installations
-"""
-git clone 
-"""
+  - Git Code Download
+ ```  
+   git clone 
+  ```
 
 ## Table of Contents
 
