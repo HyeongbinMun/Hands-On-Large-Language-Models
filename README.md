@@ -24,10 +24,19 @@ The book is available on:
 * [Goodreads](https://www.goodreads.com/book/show/210408850-hands-on-large-language-models)
 
 ## Installations
-  - Git Code Download
+  - Download Git Code
  ```  
-   git clone 
+   git clone https://github.com/HyeongbinMun/Hands-On-Large-Language-Models.git
   ```
+- Creating a Docker
+ ```  
+   docker-compose up -d --build
+  ```
+
+## How to Use
+  - Accessing the URL via port 8888 on Jupiter Notebook(8888=58888)
+    - http://your_domain_url:58888/
+    - jupyter password : **password**
 
 ## Table of Contents
 
